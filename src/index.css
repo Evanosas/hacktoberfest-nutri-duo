@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #3c3c3c;
+    background-color: #f7f9fa;
+  }
+
+  h1, h2, h3, .font-fun {
+    font-family: 'Fredoka', 'Plus Jakarta Sans', cursive, sans-serif;
+  }
+}
+
+/* Duolingo-style 3D tactile buttons */
+.duo-btn {
+  transition: all 0.12s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+}
+
+.duo-btn:active:not(:disabled) {
+  transform: translateY(3px);
+  border-bottom-width: 1px !important;
+  margin-top: 2px;
+}
+
+/* Duolingo button colors */
+.duo-btn-green {
+  background-color: #58cc02;
+  border-color: #46a302;
+  color: #ffffff;
+}
+.duo-btn-green:hover:not(:disabled) {
+  background-color: #61e002;
+}
+
+.duo-btn-blue {
+  background-color: #1cb0f6;
+  border-color: #1899d6;
+  color: #ffffff;
+}
+.duo-btn-blue:hover:not(:disabled) {
+  background-color: #23bbfb;
+}
+
+.duo-btn-yellow {
+  background-color: #ffc800;
+  border-color: #e5a500;
+  color: #4b3600;
+}
+.duo-btn-yellow:hover:not(:disabled) {
+  background-color: #ffd026;
+}
+
+.duo-btn-red {
+  background-color: #ff4b4b;
+  border-color: #ea2b2b;
+  color: #ffffff;
+}
+.duo-btn-red:hover:not(:disabled) {
+  background-color: #ff5f5f;
+}
+
+.duo-btn-gray {
+  background-color: #ffffff;
+  border-color: #e5e7eb;
+  color: #4b5563;
+}
+.duo-btn-gray:hover:not(:disabled) {
+  background-color: #f3f4f6;
+}
+
+/* Custom friendly scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f3f5;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

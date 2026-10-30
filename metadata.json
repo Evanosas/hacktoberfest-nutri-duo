@@ -1,0 +1,8 @@
+{
+  "name": "NutriDuo - Monthly Food Budget & Nutrient Tracker",
+  "description": "A Duolingo-inspired friendly tracker for monthly food budget, calories, macro nutrients, water intake (bottles and sachets), and AI health challenges tailored to your age, weight, and blood group.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
